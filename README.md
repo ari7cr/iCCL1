@@ -5,6 +5,6 @@ if (!require(devtools)) {
   install.packages("devtools")
 }
 
-devtools::install_github("xmc811/Scillus", ref = "development")
-library(Scillus)
+devtools::install_github("ari7cr/iCCL1")
+library(iCCL1)
 ````
