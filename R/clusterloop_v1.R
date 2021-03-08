@@ -17,20 +17,20 @@ iCCL <- function(SeuratObject, min.dim, max.dim, projectname){
   resol = c(0.25, 0.50, 0.75, 1)
 
   #Preprocessing, Scaling, PCA
-  input <- Seurat::FindVariableFeatures(SeuratObject, selection.method = "vst", nfeatures = 2000)
-  all.genes <- rownames(input)
-  input <- Seurat::ScaleData(input, features = all.genes)
-  input <- Seurat::RunPCA(input, features = VariableFeatures(object = input))
+  #input <- Seurat::FindVariableFeatures(SeuratObject, selection.method = "vst", nfeatures = 2000)
+  #all.genes <- rownames(input)
+  #input <- Seurat::ScaleData(input, features = all.genes)
+  #input <- Seurat::RunPCA(input, features = VariableFeatures(object = input))
 
 
   for(i in dim.list){
-    dimens <- Seurat::FindNeighbors(input, dims = 1:i)
+    dimens <- Seurat::FindNeighbors(SeuratObject, dims = 1:i)
     for(r in resol){
       clust <- Seurat::FindClusters(dimens, resolution = r)
       clust <- Seurat::RunUMAP(clust, dims = 1:i)
       nam <- paste("Dim_", i, "_Res_", r, sep = "")
-      print(c("Plotting: ", nam, "................"))
-      #assign(nam, clust)
+      print(nam)
+      assign(nam, clust)
       pl <- Seurat::DimPlot(clust, label = 1, repel = 1) + ggplot2::ggtitle(nam) # +NoLegend()
       mypath <- file.path(wd, projectname, paste(nam, ".png", sep = ""))
       png(file=mypath)
