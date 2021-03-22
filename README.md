@@ -17,8 +17,8 @@ Flowchart:
 Functions:  
 1. predictdimensions(SeuratObject) -> gives back an estimated Dimension to run clustering for   
 
-2. iCCL(SeuratObject, x, y, "projectname")  
-Basically Seurat clustering for your SeuratObject from the range of x (>3) to y. "Projectname" creates a directory in your working directory.
+2. iCCL(SeuratObject, x, y)  
+Basically Seurat clustering for your SeuratObject from the range of x (>3) to y.
 
 This package builds upon Seurat methods:
 https://www.biorxiv.org/content/10.1101/2020.10.12.335331v1
