@@ -20,5 +20,5 @@ cluster plots for dimesnion range between min.dim and max.dim
 iCCL1
 }
 \examples{
-iCCL(mySeuratObject, 20, 25, "Macrophages")
+iCCL(mySeuratObject, 20, 25)
 }

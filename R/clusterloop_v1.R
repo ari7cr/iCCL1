@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' iCCL(mySeuratObject, 20, 25, "Macrophages")
+#' iCCL(mySeuratObject, 20, 25)
 iCCL <- function(SeuratObject, min.dim, max.dim){
   wd <- getwd()
   dir.create("iCCL_results")
