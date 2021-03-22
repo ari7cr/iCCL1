@@ -13,6 +13,7 @@
 iCCL <- function(SeuratObject, min.dim, max.dim){
   wd <- getwd()
   dir.create("iCCL_results")
+  setwd("iCCL_results")
   dim.list = min.dim:max.dim
   resol = c(0.25, 0.50, 0.75, 1)
 
@@ -32,7 +33,7 @@ iCCL <- function(SeuratObject, min.dim, max.dim){
       print(nam)
       assign(nam, clust)
       pl <- Seurat::DimPlot(clust, label = 1, repel = 1) + ggplot2::ggtitle(nam) # +NoLegend()
-      mypath <- file.path(wd, projectname, paste(nam, ".png", sep = ""))
+      mypath <- file.path(wd, paste(nam, ".png", sep = ""))
       png(file=mypath)
       print(pl)
       dev.off()
