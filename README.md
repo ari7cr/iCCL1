@@ -1,4 +1,6 @@
-# iCCL1_git
+# iCCL1
+
+To install:
 
 ````
 if (!require(devtools)) {
@@ -8,8 +10,15 @@ if (!require(devtools)) {
 devtools::install_github("ari7cr/iCCL1")
 library(iCCL1)
 ````
+Flowchart:
 
 <a href="https://imgur.com/Km0QXPh"><img src="https://i.imgur.com/Km0QXPh.png" title="source: imgur.com" /></a>
+
+Functions:  
+1. predictdimensions(SeuratObject) -> gives back an estimated Dimension to run clustering for   
+
+2. iCCL(SeuratObject, x, y, "projectname")  
+Basically Seurat clustering for your SeuratObject from the range of x (>3) to y. "Projectname" creates a directory in your working directory.
 
 This package builds upon Seurat methods:
 https://www.biorxiv.org/content/10.1101/2020.10.12.335331v1
