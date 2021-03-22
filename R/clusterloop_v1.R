@@ -1,18 +1,18 @@
 #' iCCL1
 #'
-#' @param SeuratObject
-#' @param min.dim
-#' @param max.dim
-#' @param projectname
+#' @param SeuratObject your Seurat Objeect
+#' @param min.dim minimum dimension
+#' @param max.dim maximum dimenson
+#'
 #'
 #' @return cluster plots for dimesnion range between min.dim and max.dim
 #' @export
 #'
 #' @examples
 #' iCCL(mySeuratObject, 20, 25, "Macrophages")
-iCCL <- function(SeuratObject, min.dim, max.dim, projectname){
+iCCL <- function(SeuratObject, min.dim, max.dim){
   wd <- getwd()
-  dir.create(projectname)
+  dir.create("iCCL_results")
   dim.list = min.dim:max.dim
   resol = c(0.25, 0.50, 0.75, 1)
 

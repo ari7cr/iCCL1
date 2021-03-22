@@ -4,10 +4,14 @@
 \alias{iCCL}
 \title{iCCL1}
 \usage{
-iCCL(SeuratObject, min.dim, max.dim, projectname)
+iCCL(SeuratObject, min.dim, max.dim)
 }
 \arguments{
-\item{projectname}{}
+\item{SeuratObject}{your Seurat Objeect}
+
+\item{min.dim}{minimum dimension}
+
+\item{max.dim}{maximum dimenson}
 }
 \value{
 cluster plots for dimesnion range between min.dim and max.dim
