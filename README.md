@@ -9,8 +9,7 @@ devtools::install_github("ari7cr/iCCL1")
 library(iCCL1)
 ````
 
-![Flowchart](https://drive.google.com/file/d/11dON8Nv49Ku_PS_d0JhjcW0lfCiNR-nY/view?usp=sharing)
-
+<a href="https://imgur.com/Km0QXPh"><img src="https://i.imgur.com/Km0QXPh.png" title="source: imgur.com" /></a>
 
 This package builds upon Seurat methods:
 https://www.biorxiv.org/content/10.1101/2020.10.12.335331v1
