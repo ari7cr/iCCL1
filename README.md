@@ -20,6 +20,15 @@ Functions:
 2. iCCL(SeuratObject, x, y)  
 Basically Seurat clustering for your SeuratObject from the range of x (>3) to y.
 
+
+<b> This Package is currently undergoing maintenace for improving </b>  
+Planned for iCCL2: t-SNE adaption  
+
+Long-Term goals: Clustering Scores (ideas and participation very much appreciated!)  
+
+
+
+
 This package builds upon Seurat methods:
 https://www.biorxiv.org/content/10.1101/2020.10.12.335331v1
 
