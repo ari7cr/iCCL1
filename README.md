@@ -35,5 +35,6 @@ https://www.biorxiv.org/content/10.1101/2020.10.12.335331v1
 The method which predictdimension() builds on was developed by Harvard Chan Bioinformatics Core:
 https://bioinformatics.sph.harvard.edu/  
 
-Arian Abbasi  
-University of Düsseldorf
+Arian Abbasi
+abbasi@hhu.de
+University of Cologne
