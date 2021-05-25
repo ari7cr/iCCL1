@@ -18,7 +18,7 @@ Functions:
 1. predictdimensions(SeuratObject) -> gives back an estimated Dimension to run clustering for   
 
 2. iCCL(SeuratObject, x, y)  
-Basically Seurat clustering for your SeuratObject from the range of x (>3) to y.
+Basically 1-command UMAP Seurat clustering for your SeuratObject from your range of choice: x (>3) to y.
 
 
 <b> This Package is currently undergoing maintenace for improving </b>  
